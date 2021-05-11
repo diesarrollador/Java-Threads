@@ -16,7 +16,7 @@ public class HilosClase extends Thread{
         int aux=0;
         for(int i=0;i<this.lista.length;i++){
             aux+=lista[i];
-            if((1%100000)==0){
+            if((i%100000)==0){
                 System.out.println("Resultado parcial del hilo"+this.num_hilo+":"+aux);
             }
         }
